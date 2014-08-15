@@ -34,7 +34,18 @@ define(['../constants',
     Ball.prototype.reset = function() {
       this.x = Constants.BALL_START_X;
       this.y = Constants.BALL_START_Y;
-      this.velocity = new Vector2(Constants.BALL_SPEED_X, Constants.BALL_SPEED_Y);
+      this.velocity = new Vector2(
+        this.getRandomNumber() * Constants.BALL_SPEED_X,
+        this.getRandomNumber() * Constants.BALL_SPEED_Y);
+    };
+
+    Ball.prototype.getRandomNumber = function () {
+      var x = Math.floor((Math.random() * 3) + 1);
+      if (x == 1) {
+        return -1;
+      } else {
+        return 1;
+      }
     };
 
     return Ball;
