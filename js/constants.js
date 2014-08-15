@@ -84,8 +84,8 @@ define([], function() {
   Constants.GOAL_HEIGHT = Constants.WINDOW_HEIGHT;
 
   // Sounds
-  Constants.BALL_HIT_SOUND = '/sounds/ball_hit.wav';
-  Constants.PLAYER_SCORES_SOUND = '/sounds/player_scores.wav';
+  Constants.BALL_HIT_SOUND = 'sounds/ball_hit.wav';
+  Constants.PLAYER_SCORES_SOUND = 'sounds/player_scores.wav';
   Constants.ALL_SOUNDS = [Constants.BALL_HIT_SOUND, Constants.PLAYER_SCORES_SOUND];
 
   return Constants;
