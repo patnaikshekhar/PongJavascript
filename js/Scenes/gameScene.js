@@ -1,6 +1,6 @@
 define(['../constants',
   '../../lib/gameEngine/scene',
-  '../../lib/gameEngine/Utilities/Vector2',
+  '../../lib/gameEngine/Utilities/vector2',
   '../../lib/gameEngine/Entities/basicObject',
   '../../lib/gameEngine/Entities/staticText',
   '../Entities/player',
